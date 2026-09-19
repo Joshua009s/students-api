@@ -3,9 +3,9 @@ from config import APPP_VERSION
 
 app=FastApi(title="students-api", version=APPP_VERSION)
 
-@app.get("/healt")
-def healt():
-    return {"status":"ok"}
+@app.get("/health")
+def health():
+    return {"status":"healthy"}
 
 @app.get("/students")
 def list_students():
